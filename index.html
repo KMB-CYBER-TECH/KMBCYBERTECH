@@ -1,0 +1,84 @@
+<!Doctype html>
+
+    <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> KMB.CYBER TECH </title>
+    <link rel = "stylesheet" href="fixed.css".css>
+    
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <meta name=  "viewport" content="width=device-width , initial-scale =1">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<section id ="banner">
+<img src ="CTlogo.png.jpg" class="logo" alt="wow" >
+<div class="banner-text">
+<h1>CYBER TECH</h1>
+<p> AI-powered cybersecurity services that not only protect, but also empower businesses to thrive in the digital age.<br> CEO : Moses Bassey.</p>
+<div class="banner-btn">
+<a href="findout.html" ><span></span> Find Out</a>
+<a href="readmore.html" ><span></span> Read More</a>
+
+</div>
+
+<button onclick="printPage()">Print Page</button>
+
+    </section>
+    <div id="sideNav">
+<nav>
+    <ul>
+        <li><a href="#banner">HOME</a></li>
+        <li><a href="featuress.html">FEATURES</a></li>
+        <li><a href="service.html">SERVICES</a></li>
+        <li><a href="testiomonial.html">TESTIMONIAL</a></li>
+        <li><a href="foot.html">MEET US</a></li>
+        <li><a href="findout.html">FIND OUT</a></li>
+        <li><a href="readmore.html">READ MORE</a></li>
+
+
+    </ul>
+</nav>
+
+    </div>
+    <div id="menuBtn">
+        <img src="pic3.jpg" id="menu" alt="ok">
+    </div>
+
+       
+
+
+<script>
+    var menuBtn=document.getElementById("menuBtn")
+    var sideNav=document.getElementById("sideNav")   
+    var menu=document.getElementById("menu")
+
+    sideNav.style.right="-250px";
+
+    menuBtn.onclick= function(){
+        if(sideNav.style.right=="-250px"){
+            sideNav.style.right="0";
+            menu.src="pic4.jpg";
+        }
+        else{
+            sideNav.style.right ="-250px";
+            menu.src="pic3.jpg";
+        }
+    }
+
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+
+function printPage(){
+    print()
+}
+</script>
+</body>
+</html>
